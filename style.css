@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+
+:root {
+    --primary: #C9E4CA;
+    --secondary: #87BBA2;
+    --tertiary: #55828B;
+}
+
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    color: #183449;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.winners,
+#gameboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.winners {
+    width: 300px;
+    margin: auto;
+}
+
+.box {
+    text-align: center;
+
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    font-size: 50px;
+    color: #183449;
+}
+
+#gameboard {
+    width: 300px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.turn {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    position: relative;
+    margin: auto;
+}
+
+.turn h1 {
+    z-index: 1;
+}
+
+
+.active {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--tertiary);
+    position: absolute;
+    left: -10px;
+    transition: .3s linear;
+}
